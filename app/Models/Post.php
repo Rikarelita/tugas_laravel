@@ -13,6 +13,11 @@ class Post extends Model
 
     public function category()
     {
-        return $this->belongsTo( related: Category::class);
+        return $this->belongsTo(related: Category::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(related: User::class);
     }
 }

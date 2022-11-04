@@ -81,6 +81,7 @@
                                     <th>No</th>
                                     <th>Photo</th>
                                     <th>Title</th>
+                                    <th>Author</th>
                                     <th>Category</th>
                                     <th>Status</th>
                                     <th>CreatedAt</th>
@@ -99,6 +100,7 @@
                                             <img src="{{ $val->photo }}" alt="" width="50px">
                                         </td>
                                         <td>{{ $val->title }}</td>
+                                        <td>{{ $val->user->name }}</td>
                                         <td> {{ $val->category->name}} </td>
                                         <td>
                                             @if ($val->is_active == 1)

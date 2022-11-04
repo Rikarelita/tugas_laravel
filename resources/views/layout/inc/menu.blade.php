@@ -23,7 +23,7 @@
 
       <ul class="dropdown-menu">
         <li>
-            <a class="nav-link {{ request()->routeIs('post.index') ? 'active' : '' }}" href="/post">
+            <a class="nav-link {{ request()->routeIs('post.index') ? 'active' : '' }}" href="{{ route('post.index') }}">
              Post List
             </a>
         </li>
